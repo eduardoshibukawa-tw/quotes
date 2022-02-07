@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: yoda
+
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: ${spring.application.name}, settings, toggles
