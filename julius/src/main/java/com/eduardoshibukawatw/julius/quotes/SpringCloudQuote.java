@@ -1,12 +1,12 @@
-package com.eduardoshibukawatw.yoda.quotes;
+package com.eduardoshibukawatw.julius.quotes;
 
-import com.eduardoshibukawatw.yoda.configuration.YodaConfiguration;
+import com.eduardoshibukawatw.julius.configuration.JuliusConfiguration;
 
-public class SpringCloudQuote implements QuotesUseCase{
+public class SpringCloudQuote implements QuotesUseCase {
 
-    private final YodaConfiguration configuration;
+    private final JuliusConfiguration configuration;
 
-    public SpringCloudQuote(YodaConfiguration configuration) {
+    public SpringCloudQuote(JuliusConfiguration configuration) {
         this.configuration = configuration;
     }
 

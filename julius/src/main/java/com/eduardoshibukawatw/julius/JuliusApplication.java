@@ -1,13 +1,13 @@
-package com.eduardoshibukawatw.yoda;
+package com.eduardoshibukawatw.julius;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class YodaApplication {
+public class JuliusApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(YodaApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(JuliusApplication.class, args);
+    }
 
 }

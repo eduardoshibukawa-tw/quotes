@@ -1,4 +1,4 @@
-package com.eduardoshibukawatw.yoda.quotes;
+package com.eduardoshibukawatw.julius.quotes;
 
 public interface QuotesUseCase {
 
