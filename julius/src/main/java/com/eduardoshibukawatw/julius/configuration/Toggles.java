@@ -1,4 +1,4 @@
-package com.eduardoshibukawatw.yoda.configuration;
+package com.eduardoshibukawatw.julius.configuration;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

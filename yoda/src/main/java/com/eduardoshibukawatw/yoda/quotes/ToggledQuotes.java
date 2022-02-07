@@ -2,11 +2,13 @@ package com.eduardoshibukawatw.yoda.quotes;
 
 import com.eduardoshibukawatw.yoda.configuration.Toggles;
 import com.eduardoshibukawatw.yoda.configuration.YodaConfiguration;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 
 @Service
+@RefreshScope
 public class ToggledQuotes implements QuotesUseCase {
 
     private final Toggles toggles;
