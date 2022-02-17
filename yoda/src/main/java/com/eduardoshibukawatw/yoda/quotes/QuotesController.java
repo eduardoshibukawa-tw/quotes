@@ -1,9 +1,11 @@
 package com.eduardoshibukawatw.yoda.quotes;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("quote")
 public class QuotesController {
 
     private final QuotesUseCase quotesUseCase;

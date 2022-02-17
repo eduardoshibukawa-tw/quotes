@@ -12,18 +12,18 @@ import javax.annotation.PostConstruct;
 public class ToggledQuotes implements QuotesUseCase {
 
     private final Toggles toggles;
-    private final YodaConfiguration saciConfiguration;
+    private final YodaConfiguration configuration;
     private QuotesUseCase useCase;
 
     public ToggledQuotes(Toggles toggles, YodaConfiguration configuration) {
         this.toggles = toggles;
-        this.saciConfiguration = configuration;
+        this.configuration = configuration;
     }
 
     @PostConstruct
     private void init() {
         if (toggles.isParamQuotesEnabled()) {
-            this.useCase = new SpringCloudQuote(saciConfiguration);
+            this.useCase = new SpringCloudQuote(configuration);
         } else {
             this.useCase = new DefaultQuote();
         }
