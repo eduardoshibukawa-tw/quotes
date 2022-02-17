@@ -9,9 +9,9 @@ import org.springframework.context.annotation.Configuration;
 @Data
 public class Toggles {
 
-    private String param_quotes;
+    private String paramQuotes;
 
     public boolean isParamQuotesEnabled() {
-        return "true".equals(this.param_quotes);
+        return "true".equals(this.paramQuotes);
     }
 }
