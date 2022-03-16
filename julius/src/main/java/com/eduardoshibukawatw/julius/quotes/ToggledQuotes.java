@@ -6,6 +6,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
+import java.util.List;
 
 @Service
 @RefreshScope
@@ -32,6 +33,11 @@ public class ToggledQuotes implements QuotesUseCase {
     @Override
     public String quote() {
         return this.useCase.quote();
+    }
+
+    @Override
+    public List<String> quotes() {
+        return this.useCase.quotes();
     }
 }
 
