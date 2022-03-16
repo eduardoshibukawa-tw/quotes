@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  build_yoda:
+  build:
     docker:
       - image: circleci/openjdk:11-jdk
     working_directory: ~/repo
