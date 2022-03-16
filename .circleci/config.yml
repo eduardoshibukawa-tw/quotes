@@ -20,7 +20,7 @@ jobs:
           command: cd yoda; ./gradlew dependencies
       - save_cache:
           paths:
-            -  ~/yoda/.gradle
+            - ~/yoda/.gradle
           key: v1-dependencies-{{ checksum "./yoda/build.gradle" }}
       - run:
           name: Build and run tests
