@@ -2,6 +2,17 @@ plugins {
 	id 'org.springframework.boot' version '2.6.3'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
+	id "org.sonarqube" version "3.3"
+	id "jacoco"
+}
+
+sonarqube {
+	properties {
+		property "sonar.projectKey", "eduardoshibukawa-yoda"
+		property "sonar.organization", "eduardoshibukawa-tw"
+		property "sonar.host.url", "http://localhost:9000"
+		property "sonar.exclusions", "**/*Generated.java"
+	}
 }
 
 group = 'com.eduardoshibukawa-tw'
@@ -42,4 +53,11 @@ dependencyManagement {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+
+jacocoTestReport {
+	reports {
+		xml.enabled true
+	}
 }
