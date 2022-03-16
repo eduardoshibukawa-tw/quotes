@@ -152,6 +152,7 @@ eduardo.shibukawa in ~ took 3s
 ]
 
 ### Change param quotes to false in configuration, then call the command above
+### This will make the service to return a default quote since the feature toggle will be disabled
 eduardo.shibukawa in ~
 ❯ curl -X POST http://localhost:8888/monitor -H "X-Github-Event: push" -H "Content-Type: application/json" -d '{"commits": [{"modified": ["application.properties"]}]}'
 ["*"]%
@@ -159,10 +160,10 @@ eduardo.shibukawa in ~
 ### Yoda service
 eduardo.shibukawa in ~
 ❯ curl localhost:8080/quote
-Default quote%
+Disabled feature toggle quote yoda service%
 
 ### Julius service
 eduardo.shibukawa in ~
 ❯ curl localhost:8081/quote
-Default quote%
+Disabled feature toggle quote julius service%
 ```

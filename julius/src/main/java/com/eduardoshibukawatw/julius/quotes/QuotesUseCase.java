@@ -14,12 +14,12 @@ public interface QuotesUseCase {
 
         @Override
         public String quote() {
-            return "Default quote";
+            return "Disabled feature toggle quote julius service";
         }
 
         @Override
         public List<String> quotes() {
-            return Stream.of("Default quote").collect(Collectors.toUnmodifiableList());
+            return Stream.of("Disabled feature toggle quote julius service").collect(Collectors.toUnmodifiableList());
         }
     }
 }

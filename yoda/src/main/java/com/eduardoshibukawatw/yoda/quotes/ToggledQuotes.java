@@ -37,7 +37,7 @@ public class ToggledQuotes implements QuotesUseCase {
 
     @Override
     public List<String> quotes() {
-        return configuration.getQuotes();
+        return this.useCase.quotes();
     }
 }
 
